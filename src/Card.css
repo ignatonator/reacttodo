@@ -1,0 +1,36 @@
+.card{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: #aaa 1px solid;
+    align-items: center;
+}
+.buttons{
+    margin:auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+ 
+    
+}
+@media only screen and (max-width:900px) {
+    .buttons{
+        flex-direction: column;
+    }}
+.buttons button{
+    font-size: 2rem;
+    text-decoration: none;
+    border: none;
+    background-color: rgba(255,255,255,0);
+    
+   ;
+    transition: all ease-in-out 0.2s;
+    
+}
+.buttons button:hover{
+    transform: scale(1.2);
+    transition: all ease-in-out 0.2s;
+}

@@ -1,0 +1,84 @@
+.todoForm{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    
+    max-height: 150px;
+}
+.todoInput{
+    
+    border-radius: 10px;
+    width: 85%;
+    background-color: rgba(255,255,255,0.03);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.05 );
+    backdrop-filter: blur( 30px );
+    -webkit-backdrop-filter: blur( 30px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    height: 85%;
+    padding: 10px;
+    font-size: 1.2rem;
+    transition: all ease-in-out .2s;
+    margin: auto;
+}
+.todoInput:hover{
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    height: 90%;
+    width: 90%;
+    transition: all ease-in-out .2s;
+    background-color: rgba(255,255,255,0.13);
+    font-size: 1.1rem;
+
+}
+.todoInput:focus{
+    outline:none;
+    height: 95%;
+    width: 90%;
+    transition: all ease-in-out .2s;
+    background-color: rgba(255,255,255,0.13);
+    font-size: 1.3rem;
+}
+.todoInput::-webkit-input-placeholder{
+    font-size: 1.1rem;
+}
+@media only screen and (max-width:900px) {
+    .todoSubmit{
+        padding: 20px 25px !important;
+    }
+}
+@media only screen and (max-width:650px) {
+    .todoForm{
+        display: flex;
+        flex-direction: column;
+        min-height: 150px;
+        max-height: 300px;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px;;
+    }
+    .todoInput{
+        height: 50%;
+    }
+}
+.todoSubmit {
+    display: inline-block;
+    padding: 30px 40px;
+    border: 0;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.13);
+    border: 1px solid rgba(255,255,255,0.13);
+    backdrop-filter: blur(30px);
+    
+    font-size: 14px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: auto;
+    transition: all ease-in-out .2s;
+  }
+ 
+  .todoSubmit:hover {
+    background-color: rgba(255,255,255,0.2);
+    transition: all ease-in-out .2s;
+    transform: scale(1.1);
+  }
